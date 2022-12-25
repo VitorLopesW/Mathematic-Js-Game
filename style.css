@@ -1,0 +1,79 @@
+body{
+background-color: rgb(29, 28, 28);
+
+
+}
+
+
+.result{
+  font-size: 50px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+
+.container {
+
+
+  background-color:  rgb(29, 28, 28);
+  display: grid;
+  grid-gap: 3px;
+  font-size: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 55px 55px repeat(4, 1fr) 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  grid-template-areas:
+    'c c c' 
+    'i r r' 
+    '1 2 3'
+    '4 5 6'
+    "7 8 9"
+    '10 11 e'
+    'w w l';
+    text-align: center;
+}
+
+.C{
+  grid-area: c;
+  font-size: 50px;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.result{
+  grid-area: r;
+}
+
+
+.equal{
+  grid-area: e;
+}
+.wins{
+  grid-area: w;
+  
+}
+
+.invert{
+  grid-area: i;
+  font-size: 50px;
+  
+}
+
+.container > div:nth-child(1n) {
+  background-color: #292929;	
+}
+.container > div:nth-child(13n) {
+  background-color: #7cbdc2;	
+}
+.container > div:nth-child(14n) {
+  background-color: #7cbdc2;	
+}
+.container > div:nth-child(15n) {
+  background-color: #7cc27c;	
+  font-size: 50px;
+}
+.container > div:nth-child(16n) {
+  background-color: #964f4f;	
+  font-size: 50px;
+}
